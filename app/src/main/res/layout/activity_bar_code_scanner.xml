@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarCodeScannerActivity">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="No Bar Code Detected"
+        android:textSize="20sp"
+        android:layout_margin="20sp"
+        android:textColor="@color/white"/>
+
+   <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+       android:id="@+id/button_scsnner"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="#FAE20E"
+       android:layout_alignParentBottom="true"
+       android:layout_margin="20sp"
+       android:textColor="@color/white"
+       android:textAlignment="center"
+       android:textSize="20sp"
+       android:text="Scan Bar Code"/>
+
+</RelativeLayout>
